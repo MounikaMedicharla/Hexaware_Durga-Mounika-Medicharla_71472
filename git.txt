@@ -1,0 +1,107 @@
+					GIT
+					===
+
+6)Git life cycle ?
+*Step–1, We first clone any of the code residing in the remote repository to make our own local repository.
+*Step-2 we edit the files that we have cloned in our local repository and make the necessary changes in it.
+*Step-3 we commit our changes by first adding them to our staging area and committing them with a commit message.
+*Step–4,5 we first check whether there are any of the changes done in the remote repository by some other users 
+and we first pull that changes.
+If there are no changes we directly proceed with Step – 6 in which we push our changes to the remote 
+repository and we are done with our work.
+
+===========================================================================================================
+
+7)Explain the git commands?
+a)git init :git init is one way to start a new project with Git. To start a repository, use either 
+git init or git clone - not both. To initialize a repository, Git creates a hidden directory 
+called . git . That directory stores all of the objects and refs that Git uses and creates as a 
+part of your project's history.
+
+b)git add: The git add command is used to add file contents to the Index (Staging Area). 
+This command updates the current content of the working tree to the staging area. 
+It also prepares the staged content for the next commit.
+
+c)git commit :The git commit command captures a snapshot of the project's currently staged changes. 
+Committed snapshots can be thought of as “safe” versions of a project—Git will never change them 
+unless you explicitly ask it to.
+
+d)git pull :The git pull command is used to fetch and download content from a remote repository 
+and immediately update the local repository to match that content. Merging remote upstream changes 
+into your local repository is a common task in Git-based collaboration work flows.
+
+e)git push: The git push command is used to upload local repository content to a remote repository.
+ Pushing is how you transfer commits from your local repository to a remote repo. 
+
+f)git checkout: The git checkout command is used to switch between branches in a repository. Be careful with 
+your staged files and commits when switching between branches. The git checkout command operates 
+upon three different entities which are files, commits, and branches.
+
+g)git checkout -b: git checkout refers to the action of swaping between different repository
+ branches/files/commits. It helps in switching between different branches that have been created 
+by git branch. It can be understood as the method of selecting the current line of development one
+ has to work on.
+
+h)git checkout -d:The git checkout command is used to switch branches and check content out into 
+your working directory. 
+
+i)git log: The git log command shows a list of all the commits made to a repository. You can see 
+the hash of each Git commit , the message associated with each commit, and more metadata. This 
+command is useful for displaying the history of a repository.
+
+j)git reset: One primary use is blowing away your work but not switching commits: git reset --hard 
+means git reset --hard HEAD , i.e. don't change the branch but get rid of all local changes. The 
+other is simply moving a branch from one place to another, and keeping index/work tree in sync.
+
+k)git revert: The git revert command is used for undoing changes to a repository's commit history. 
+Other 'undo' commands like, git checkout and git reset , move the HEAD and branch ref pointers to 
+a specified commit. Git revert also takes a specified commit, however, git revert does not move 
+reference pointers to this commit.
+
+l)git merge: To merge branches locally, use git checkout to switch to the branch you want
+ to merge into. This branch is typically the main branch. Next, use git merge and specify
+ the name of the other branch to bring into this branch.
+
+m)git rebase: The git rebase command is used to merge the history of two branches on a 
+repository. It is often used to integrate changes from one branch onto another branch. 
+You should only use the git rebase command locally; it should not be used on a public 
+repository.
+======================================================================================================
+
+8)
+*Definition
+Centralized version control is the simplest form of version control in which the central 
+repository of the server provides the latest code to the client machines. Distributed 
+version control, on the other hand, is a form of version control where the complete 
+codebase (including its full history) is mirrored on every developer’s computer. Thus,
+this is the main difference between centralized and distributed version control.
+
+*Local Repositories
+In centralized version control, there are no local repositories; however, in distributed 
+version control, there are local repositories. Hence, this is also an important difference 
+between centralized and distributed version control.
+
+*Speed
+Furthermore, distributed version control works faster than centralized version control.
+
+*Internet Connectivity
+Moreover, centralized version controlling always require internet connectivity while developers in
+ distributed version control can work with a local repository without an internet connection.
+
+*Main Focus
+Also, one other difference between centralized and distributed version control is their focus. 
+Centralized version control focuses on synchronizing, tracking, and backing up files, while 
+distributed version control focuses on sharing changes.
+
+*Failures
+In centralized version control, a failure in the central server terminates all the versions, 
+while in distributed version control, a failure in the main server does not affect the development.
+ Thus, this is another important difference between centralized and distributed version control.
+
+*Conclusion
+The main difference between centralized and distributed version control is that, in centralized 
+version control, the versions are saved in the remote repository while, in distributed version 
+control, versions can be saved in the remote repository as well as in local repositories of the 
+local machines. In brief, central version control is simple, but it has disadvantages. On the 
+other hand, distributed version control is more flexible. Therefore, distributed version control 
+systems such as Git are more popular in software development.
